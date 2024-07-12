@@ -72,6 +72,7 @@ environment {
     stage ("Deploy k8s manifest files") {
        steps {
         script{
+           sh 'ls -l' // Check current directory contents for debugging
           sh './deploy.sh'
         }
        }
