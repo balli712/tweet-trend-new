@@ -68,6 +68,15 @@ environment {
             }
         }
     }
+    
+    stage ("Deploy k8s manifest files") {
+       steps {
+        scripts{
+          sh './deploy.sh'
+        }
+       }
+    }
+
 
  }  
  }
