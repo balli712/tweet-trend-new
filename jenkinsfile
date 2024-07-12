@@ -72,7 +72,7 @@ environment {
     stage ("Deploy k8s manifest files") {
        steps {
         script{
-          sh '/opt/k8s/.deploy.sh'
+          sh './deploy.sh'
         }
        }
     }
